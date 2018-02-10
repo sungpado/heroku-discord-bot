@@ -30,10 +30,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    print("~날짜")
-    print(message.mentions[0].name)
-    if client.user.name in [mention.name for mention in message.mentions]:
+    if message.content.startswith('~날짜'):
         await client.send_message(message.channel, '오늘은 {}요일입니다. :wink: '.format(w))
-
-client.run(os.environ['DISCORD_TOKEN'])
-
+client.run('MzkwMDQzNTkwMzc1NTA1OTIx.DWB6hg.V6S3bBJjVZBo0sDfTfgnTcakJE8')
