@@ -35,5 +35,5 @@ async def on_message(message):
     if client.user.name in [mention.name for mention in message.mentions]:
         await client.send_message(message.channel, '오늘은 {}요일입니다. :wink: '.format(w))
 
-client.run(os.environ['MzkwMDQzNTkwMzc1NTA1OTIx.DWB6hg.V6S3bBJjVZBo0sDfTfgnTcakJE8'])
+client.run(os.environ['DISCORD_TOKEN'])
 
